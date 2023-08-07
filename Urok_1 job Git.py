@@ -1,4 +1,7 @@
-print(1) 
-a = 0
-if a == 0:
-    print(123)
+def palindrom(s):
+    if s == s[::-1]:
+        print('True')
+    else:
+        print('false')
+
+palindrom('лепспел')
