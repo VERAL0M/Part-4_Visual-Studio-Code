@@ -1,6 +1,9 @@
-from django.urls import path, include
-from .views import func
+
+from django.urls import path
+from .views import index, top_sellers
+
 
 urlpatterns = [
-    path('', func),
-]
+    path('', index, name='main-page'), 
+    path( 'top-sellers/', top_sellers, name='top-sellers'),
+    ]
